@@ -1,0 +1,117 @@
+[
+  {
+    "id": 1,
+    "question": "What does HTML stand for?",
+    "choices": [
+      "Hyper Text Markup Language",
+      "High Tech Modern Language",
+      "Hyperlink and Text Markup Language",
+      "Home Tool Markup Language"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 2,
+    "question": "Which CSS property is used to change the background color?",
+    "choices": ["color", "bg-color", "background-color", "design-color"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 3,
+    "question": "Inside which HTML element do we put the JavaScript?",
+    "choices": ["<js>", "<scripting>", "<script>", "<javascript>"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 4,
+    "question": "How do you write 'Hello World' in an alert box?",
+    "choices": [
+      "msg('Hello World');",
+      "alert('Hello World');",
+      "alertBox('Hello World');",
+      "msgBox('Hello World');"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 5,
+    "question": "Which JavaScript keyword is used to declare a constant variable?",
+    "choices": ["var", "let", "constant", "const"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 6,
+    "question": "Which of the following is a CSS framework?",
+    "choices": ["React", "Bootstrap", "Node.js", "Django"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 7,
+    "question": "What does DOM stand for?",
+    "choices": [
+      "Document Object Model",
+      "Data Oriented Model",
+      "Digital Ordinance Model",
+      "Desktop Object Management"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 8,
+    "question": "Which array method adds one or more elements to the end of an array?",
+    "choices": ["shift()", "unshift()", "push()", "pop()"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 9,
+    "question": "How do you single-line comment in JavaScript?",
+    "choices": [
+      "<!-- Comment -->",
+      "/* Comment */",
+      "// Comment",
+      "' Comment"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 10,
+    "question": "Which method is used to parse a JSON string into an object?",
+    "choices": [
+      "JSON.parse()",
+      "JSON.stringify()",
+      "JSON.object()",
+      "JSON.convert()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 11,
+    "question": "Which HTTP method is typically used to request data from a server?",
+    "choices": ["POST", "GET", "PUT", "DELETE"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 12,
+    "question": "Which HTML tag is used to define an unordered list?",
+    "choices": ["<ol>", "<ul>", "<li>", "<list>"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 13,
+    "question": "How do you select an element with id 'main' in CSS?",
+    "choices": [".main", "#main", "main", "*main"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 14,
+    "question": "Which operator is used for strict equality comparison in JavaScript?",
+    "choices": ["==", "=", "===", "=="],
+    "correctAnswer": 2
+  },
+  {
+    "id": 15,
+    "question": "Which Bootstrap class centers text inside an element?",
+    "choices": ["text-center", "align-center", "text-middle", "center-text"],
+    "correctAnswer": 0
+  }
+]

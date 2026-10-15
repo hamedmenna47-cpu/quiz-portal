@@ -9,41 +9,41 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container my-5">
+  <div class="container my-4">
     <div class="row justify-content-center">
-      <div class="col-md-7 col-lg-6">
+      <div class="col-12 col-md-10 col-lg-8 col-xl-7">
         <div class="card p-4 p-md-5 text-center">
           <div class="mb-3">
-            <i class="bi bi-trophy-fill fs-1 text-purple"></i>
+            <i class="bi bi-trophy-fill text-purple display-4"></i>
           </div>
-          <h3 class="text-purple fw-bold mb-1">Assessment Complete</h3>
-          <h6 class="text-secondary mb-4"><span id="resultName"></span></h6>
+          <h2 class="text-purple fw-bold mb-1">Assessment Complete</h2>
+          <p class="text-secondary mb-4" id="resultName">Student Name</p>
 
           <div id="passFailMessage" class="mb-4"></div>
 
           <div class="row g-3 mb-4">
             <div class="col-6">
-              <div class="p-3 rounded-3 bg-dark border border-secondary">
-                <span class="text-secondary small d-block mb-1">Score</span>
-                <span class="fs-4 fw-bold text-purple"><span id="scoreDisplay"></span> / <span id="totalDisplay"></span></span>
+              <div class="p-3 pass-conditions rounded-3">
+                <span class="text-secondary d-block small">Score</span>
+                <span class="fs-4 fw-bold text-light"><span id="scoreDisplay">0</span>/<span id="totalDisplay">10</span></span>
               </div>
             </div>
             <div class="col-6">
-              <div class="p-3 rounded-3 bg-dark border border-secondary">
-                <span class="text-secondary small d-block mb-1">Percentage</span>
-                <span class="fs-4 fw-bold text-success"><span id="percentageDisplay"></span>%</span>
+              <div class="p-3 pass-conditions rounded-3">
+                <span class="text-secondary d-block small">Percentage</span>
+                <span class="fs-4 fw-bold text-success"><span id="percentageDisplay">0</span>%</span>
               </div>
             </div>
           </div>
 
           <div class="text-start mb-4">
-            <h6 class="text-purple fw-bold mb-2"><i class="bi bi-clock-history me-1"></i> Attempt History</h6>
-            <ul id="historyList" class="list-group list-group-flush small"></ul>
+            <h6 class="text-secondary fw-bold small mb-2"><i class="bi bi-clock-history me-1"></i> Attempt History</h6>
+            <ul class="list-group list-group-flush" id="historyList"></ul>
           </div>
 
           <div class="d-grid gap-2">
             <button id="tryAgainBtn" class="btn btn-purple py-2">Retake Quiz</button>
-            <button class="btn btn-outline-danger py-2" onclick="handleLogout()">Logout</button>
+            <button onclick="handleLogout()" class="btn btn-outline-danger py-2 border-0">Logout</button>
           </div>
         </div>
       </div>

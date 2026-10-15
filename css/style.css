@@ -31,6 +31,8 @@ body {
   border-radius: 20px;
   box-shadow: var(--card-glow);
   position: relative;
+  width: 100%;
+  max-width: 100%;
 }
 
 .form-label {

@@ -9,78 +9,83 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container my-5">
+  <div class="container my-4">
     <div class="row justify-content-center">
       <div class="col-12 col-md-10 col-lg-8 col-xl-7">
         <div class="card p-4 p-md-5">
           <div class="text-center mb-4">
-            <div class="d-inline-flex align-items-center justify-content-center bg-dark p-3 rounded-circle border border-secondary mb-2" style="width: 60px; height: 60px;">
-              <i class="bi bi-person-plus-fill fs-3 text-purple"></i>
-            </div>
-            <h3 class="fw-bold text-purple mb-1">Create Account</h3>
+            <h2 class="text-purple fw-bold mb-1">Create Account</h2>
             <p class="text-secondary small">Start your quiz journey today</p>
           </div>
-
-          <div id="registerAlert" class="alert d-none py-2" role="alert"></div>
-
+          
           <form id="registerForm">
+            <!-- Full Name -->
             <div class="mb-3">
-              <label class="form-label">Full Name</label>
-              <input type="text" class="form-control" id="fullName" placeholder="Enter full name" required>
+              <label for="regName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="regName" placeholder="Enter full name" required>
             </div>
 
+            <!-- Email / Account -->
             <div class="mb-3 position-relative">
-              <label class="form-label">Email / Account</label>
-              <input type="text" class="form-control" id="email" placeholder="username or username@domain.com" autocomplete="off" required>
-              <div id="emailSuggestBox" class="position-absolute w-100 d-none mt-1" style="z-index: 1050;"></div>
+              <label for="regEmail" class="form-label">Email / Account</label>
+              <input type="email" class="form-control" id="regEmail" placeholder="username or username@domain.com" autocomplete="off" required>
+              <div id="emailSuggestBox" class="position-absolute w-100 d-none mt-1 z-3"></div>
             </div>
 
+            <!-- Password -->
             <div class="mb-3">
-              <label class="form-label">Password</label>
+              <label for="regPassword" class="form-label">Password</label>
               <div class="input-group">
-                <input type="password" class="form-control" id="password" placeholder="Enter strong password" required>
-                <button class="btn btn-outline-secondary border-start-0 text-light" type="button" id="togglePassword">
-                  <i class="bi bi-eye-slash" id="toggleIcon1"></i>
+                <input type="password" class="form-control" id="regPassword" placeholder="Enter strong password" required>
+                <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                  <i class="bi bi-eye-slash" id="toggleIcon"></i>
                 </button>
               </div>
-              <div class="progress mt-2" style="height: 4px;">
-                <div id="passwordStrengthBar" class="progress-bar" style="width: 0%;"></div>
-              </div>
-              <div class="pass-conditions mt-2">
-                <div class="fw-bold mb-1 text-purple">Password must contain:</div>
-                <ul class="mb-0 ps-3">
-                  <li>At least 8 characters</li>
-                  <li>Letters & numbers/symbols</li>
-                </ul>
-              </div>
             </div>
 
+            <!-- Password Info Box -->
+            <div class="p-3 mb-3 rounded-3 pass-conditions">
+              <span class="text-purple small fw-bold d-block mb-1">Password must contain:</span>
+              <ul class="text-secondary small mb-0 ps-3">
+                <li>At least 8 characters</li>
+                <li>Letters & numbers/symbols</li>
+              </ul>
+            </div>
+
+            <!-- Confirm Password -->
             <div class="mb-3">
-              <label class="form-label">Confirm Password</label>
+              <label for="regConfirmPassword" class="form-label">Confirm Password</label>
               <div class="input-group">
-                <input type="password" class="form-control" id="confirmPassword" placeholder="Repeat password" required>
-                <button class="btn btn-outline-secondary border-start-0 text-light" type="button" id="toggleConfirmPassword">
-                  <i class="bi bi-eye-slash" id="toggleIcon2"></i>
+                <input type="password" class="form-control" id="regConfirmPassword" placeholder="Repeat password" required>
+                <button class="btn btn-outline-secondary" type="button" id="toggleConfirmPassword">
+                  <i class="bi bi-eye-slash" id="toggleConfirmIcon"></i>
                 </button>
               </div>
-              <div id="matchMessage" class="small mt-1 fw-bold"></div>
             </div>
 
+            <!-- Terms Checkbox -->
             <div class="form-check mb-4">
               <input class="form-check-input" type="checkbox" id="termsCheck" required>
-              <label class="form-check-label small text-secondary" for="termsCheck">I agree to Terms & Conditions</label>
+              <label class="form-check-label text-secondary small" for="termsCheck">
+                I agree to Terms & Conditions
+              </label>
             </div>
 
-            <button type="submit" id="registerBtn" class="btn btn-purple w-100 py-2">Register Now</button>
-          </form>
+            <div id="regError" class="text-danger small mb-3 text-center"></div>
 
-          <div class="text-center mt-4">
-            <p class="small text-secondary mb-0">Already registered? <a href="index.html" class="text-purple fw-bold text-decoration-none">Login here</a></p>
-          </div>
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-purple w-100 py-2.5 mb-3 fw-bold">Register Now</button>
+
+            <div class="text-center">
+              <span class="text-secondary small">Already registered? </span>
+              <a href="index.html" class="text-purple text-decoration-none small fw-bold">Login here</a>
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </div>
+
   <script src="js/auth.js"></script>
 </body>
 </html>
